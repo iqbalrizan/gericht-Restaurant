@@ -3,7 +3,7 @@ import { data } from '../../constants';
 import spoon from "../../assets/spoon.png"
 import menu from "../../assets/menu.png"
 import './SpecialMenu.scss';
-import MenuItem from './menuItem';
+import MenuItem from './MenuItem';
 
 const SpecialMenu = () => {
   return (
