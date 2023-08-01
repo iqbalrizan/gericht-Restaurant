@@ -1,0 +1,26 @@
+.menuitems {
+    padding: 15px 0;
+    text-align: start;
+
+    .menu-list {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        color: var(--color-golden);
+        font-weight: 700;
+        
+
+        .dash {
+            width: 90px;
+            height: 1px;
+            background: var(--color-golden);
+            margin: 0 1rem;
+        }
+    }
+    .tags {
+        color: gray;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,114 @@
+.navbar {
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    font-family: var(--font-base);
+
+    .logo {
+        img {
+            height: 50px; 
+            width: 200px;
+        }
+    }
+    .menu {
+        color: white;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 40px;
+        flex: 1;
+
+        li {
+            transition: 0.5 ease;
+            font-size: 16px;
+        }
+        
+        li:hover {
+            color: goldenrod;
+        }
+    }
+    .auth {
+        
+        display: flex;
+        gap: 30px;
+        justify-content: flex-end;
+        color: white;
+
+        button {
+            border: none;
+            outline: none;
+            background-color: var(--color-black);
+            color: white;
+            cursor: pointer;
+        }
+        
+        
+    }
+
+    .hamburger {
+        display: none;
+        color: white;
+        font-size: 27px;
+    }
+    .overlay {
+        background-color: var(--color-black);
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 8536;
+        position: absolute;
+        color: white;
+        display: grid;
+        place-items: center;
+        transition: 0.5 ease-in-out;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 30px;
+            padding: 20px 30px;
+            width: 50%;
+
+            li {
+                border-bottom: 1px solid gray;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 10px;
+            }
+        }
+        .icon-overlay {
+            font-size: 30px;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar {
+        .menu {
+            display: none !important;
+        }
+        .hamburger {
+            display: flex !important;
+        }
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .navbar {
+        .auth {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.aboutus {
+    background-image: url("../../assets//bg.png");
+    background-size: cover;
+    min-height: 80vh;
+    padding: 30px 60px;
+    font-family: var(--font-base);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg {
+        position: absolute;
+        height: 300px;
+        width: 250px;
+        
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        position: relative;
+        line-height: 30px;
+        letter-spacing: 1.5;
+
+        
+            .knife {
+                height: 400px;
+                width: 50px;
+                position: absolute;
+                top: -80px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: var(--color-golden);
+                outline: none;
+                border: none;
+            }
+            button:hover {
+                transition: 0.9 ease;
+                background-color: gray;
+    
+            }
+
+        
+
+        .wrapperleft {
+            flex: 1;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-end;
+            text-align: end;
+
+            .spoon {
+                height: 10px;
+                width: 30px;
+                transform: rotate(180deg);
+            }
+
+            h1 {
+                color: var(--color-golden);
+            }
+            p {
+                color: white;
+            }
+        }
+        .wrapperright {
+            flex: 1;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            text-align: start;
+            .spoon {
+                height: 10px;
+                width: 30px;
+                
+            }
+            h1 {
+                color: var(--color-golden);
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .aboutus {
+        padding: 20px 40px;
+        .bg {
+            height: 250px;
+            width: 200px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .knife {
+                display: none;
+            }
+
+            .wrapperleft {
+                padding-right: 0;
+            }
+            .wrapperright {
+                padding-left: 0;
+            }
+        }
+    }
+}
